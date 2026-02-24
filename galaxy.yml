@@ -1,0 +1,16 @@
+namespace: domnikl
+name: unifi_network
+version: 0.1.0
+readme: README.md
+authors:
+  - Dominik (github.com/dominik)
+description: A Collection for managing UniFi Network resources
+license:
+  - GPL-3.0-or-later
+tags:
+  - unifi
+  - network
+repository: https://github.com/ansible-collections/domnikl.unifi_network
+documentation: https://docs.ansible.com/ansible/latest/collections/domnikl/unifi_network
+homepage: https://github.com/ansible-collections/domnikl.unifi_network
+issues: https://github.com/ansible-collections/domnikl.unifi_network/issues
