@@ -1,0 +1,20 @@
+meta {
+  name: List Sites
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://{{host}}/proxy/network/integration/v1/sites
+  body: none
+  auth: inherit
+}
+
+headers {
+  X-API-Key: {{api_key}}
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

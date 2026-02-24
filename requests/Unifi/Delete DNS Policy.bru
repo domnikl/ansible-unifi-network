@@ -1,0 +1,35 @@
+meta {
+  name: Delete DNS Policy
+  type: http
+  seq: 5
+}
+
+delete {
+  url: https://{{host}}/proxy/network/integration/v1/sites/{{site_id}}/dns/policies/{{dns_policy_id}}
+  body: json
+  auth: inherit
+}
+
+headers {
+  X-API-Key: {{api_key}}
+  Accept: application/json
+}
+
+body:json {
+  {
+    "type": "A_RECORD",
+    "enabled": true,
+    "domain": "foobar.liebler.dev",
+    "ipv4Address": "192.168.0.101",
+    "ttlSeconds": 0
+  }
+}
+
+vars:pre-request {
+  dns_policy_id: 127bfb06-e782-41c3-9571-c1776b912fae
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

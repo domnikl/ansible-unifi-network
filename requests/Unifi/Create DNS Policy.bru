@@ -1,0 +1,31 @@
+meta {
+  name: Create DNS Policy
+  type: http
+  seq: 4
+}
+
+post {
+  url: https://{{host}}/proxy/network/integration/v1/sites/{{site_id}}/dns/policies
+  body: json
+  auth: inherit
+}
+
+headers {
+  X-API-Key: {{api_key}}
+  Accept: application/json
+}
+
+body:json {
+  {
+    "type": "A_RECORD",
+    "enabled": true,
+    "domain": "foobar.liebler.dev",
+    "ipv4Address": "192.168.0.101",
+    "ttlSeconds": 0
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

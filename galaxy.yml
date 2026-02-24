@@ -10,7 +10,6 @@ license:
 tags:
   - unifi
   - network
-repository: https://github.com/ansible-collections/domnikl.unifi_network
-documentation: https://docs.ansible.com/ansible/latest/collections/domnikl/unifi_network
-homepage: https://github.com/ansible-collections/domnikl.unifi_network
-issues: https://github.com/ansible-collections/domnikl.unifi_network/issues
+repository: https://github.com/domnikl/ansible-unifi-network
+homepage: https://github.com/domnikl/ansible-unifi-network
+issues: https://github.com/domnikl/ansible-unifi-network/issues
