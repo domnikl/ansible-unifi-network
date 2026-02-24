@@ -27,15 +27,19 @@ certifi
 
 ## Installation
 
-### Via ansible-galaxy (Recommended)
+### From Git (Recommended)
 
-Install the collection from Ansible Galaxy:
+Clone the repository directly to your Ansible collections path:
 
 ```bash
-ansible-galaxy collection install domnikl.unifi_network
+# Create collections directory if it doesn't exist
+mkdir -p ~/.ansible/collections/ansible_collections/domnikl
+
+# Clone the repository
+git clone https://github.com/domnikl/ansible-unifi-network.git ~/.ansible/collections/ansible_collections/domnikl/unifi_network
 ```
 
-### From Source
+### Build from Source
 
 1. Clone the repository:
 ```bash
